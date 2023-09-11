@@ -1795,4 +1795,15 @@ a:focus, a:hover {
     background-color: rgba(30, 25, 82, 0.5); /* Cor de sobreposição com transparência */
 }
 
+.map iframe {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .map iframe {
+      width: 100%;
+  }
+}
+
+
 
