@@ -1202,7 +1202,6 @@ a:hover {
   font-size: 40px;
   color: #1d1b31;
   background: linear-gradient(100deg, #1e1952, #1d1b31);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1433,8 +1432,6 @@ a:hover {
 .team-member .member-content ul li a i {
   color: #1d1b31;
   background: linear-gradient(100deg, #1e1952, #1d1b31);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .team-member .member-content ul li a::hover {
