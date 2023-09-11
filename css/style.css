@@ -1096,7 +1096,7 @@ a:focus, a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(240, 50, 107, 0.9);
+  background: #1e1952a1;
   transition: .3s all;
 }
 
