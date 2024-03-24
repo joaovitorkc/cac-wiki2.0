@@ -21,6 +21,10 @@ h6 {
   font-weight: 600;
 }
 
+.nav-pointer {
+  cursor: pointer;
+}
+
 /*=== MEDIA QUERY ===*/
 .no-padding {
   padding: 0 !important;
