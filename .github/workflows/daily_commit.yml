@@ -19,4 +19,4 @@ jobs:
     - name: Push changes
       run: |
         git commit --allow-empty -m "Commit diário automático"
-        git push
+       git push https://${{ secrets.PAT }}@github.com/joaovitorkc/cac-wiki2.0 HEAD:main
