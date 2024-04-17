@@ -2,19 +2,19 @@ name: Daily Commit
 
 on:
   schedule:
-    - cron: '0 9 * * *' # Executar todos os dias às 9h UTC (ajuste conforme necessário)
+  - cron: '0 9 * * *'
 
 jobs:
   commit:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+    - name: Set up Git
+      run: |
+        git config --global user.email "jv0488598@gmail.com"
+        git config --global user.name "João Vitor"
 
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.x' # Substitua 'x' pela versão do Python que você está usando
-
-      - name: Run script
-        run: python /path/to/your/script.py
+    - name: Push changes
+      run: |
+        git add .
+        git commit -m "Commit diário automático"
+        git push https://${{ secrets.PAT }}@github.com/joaovitorkc/cac-wiki2.0 HEAD:main
